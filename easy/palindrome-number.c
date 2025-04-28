@@ -10,8 +10,8 @@ int main()
 {
 
     int x = 121;
-    int x = -121;
-    int x = 10;
+  // int x = -121;
+  //  int x = 10;
 
     if (isPalindrome(x))
         printf("true");
