@@ -5,7 +5,14 @@
 
 int lengthOfLastWord(char* s);
 
+int main (){
+    char s[] = "Hello World";
+   // char s[] = "day     ";
+   // char s[] = " a";
 
+    printf("%d", lengthOfLastWord(s));
+
+}
 
 int lengthOfLastWord(char* s) {
     int count = 0, i = strlen(s) - 1;
