@@ -7,8 +7,8 @@ int *buildArray(int *nums, int numsSize, int *returnSize);
 
 int main()
 {
-    int nums[] = {0, 2, 1, 5, 3, 4}; // output 012453
-    //int nums[] = {5,0,1,2,3,4}; // output 450123
+    //int nums[] = {0, 2, 1, 5, 3, 4}; // output 012453
+    int nums[] = {5,0,1,2,3,4}; // output 450123
     int i, *array, numsSize = sizeof(nums) / sizeof(nums[0]), returnSize;
 
     array = buildArray(nums, numsSize, &returnSize);
