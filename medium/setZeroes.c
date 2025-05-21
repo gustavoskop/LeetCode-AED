@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/set-matrix-zeroes/?envType=daily-question&envId=2025-05-21
+
 void setZeroes(int** matrix, int matrixSize, int* matrixColSize) {
     int i = 0, linha = 0, col = 0, lZero[matrixSize], cZero[matrixColSize[0]], coLinha = 0, coCol=0;
 
