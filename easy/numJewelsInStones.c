@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/jewels-and-stones/description/
+
 int numJewelsInStones(char* jewels, char* stones) {
     int count = 0, j, i;
 
