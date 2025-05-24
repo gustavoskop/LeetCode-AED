@@ -3,7 +3,7 @@ char *shortestCompletingWord(char *licensePlate, char **words, int wordsSize)
     int i, k = 0, j, m = 0, n = 0, count = 0, inter = 0, tam = 0;
     char w[16];
 
-    for (i = 0; i < strlen(licensePlate); i++)
+    for ( i = 0; i < strlen( licensePlate ); i++ ) 
     {
         if (licensePlate[i] == '1' || licensePlate[i] == '2' ||
             licensePlate[i] == '3' || licensePlate[i] == '4' ||
@@ -13,43 +13,42 @@ char *shortestCompletingWord(char *licensePlate, char **words, int wordsSize)
             licensePlate[i] == ' ')
             continue;
         else
-            w[k++] = tolower(licensePlate[i]);
+            w[k++] = tolower( licensePlate[i] );
     }
     w[k] = '\0';
 
-    for (i = 0; i < wordsSize; i++)
+    for ( i = 0; i < wordsSize; i++ )
     {
         k = 0;
         n = 0;
         inter = 0;
-        while (w[k] != '\0')
+        while ( w[k] != '\0' )
         {
             n = k;
             count = 0;
 
-            for (j = 0; j < strlen(words[i]); j++)
+            for ( j = 0; j < strlen( words[i] ); j++ )
             {
-                if (words[i][j] == w[n])
+                if ( words[i][j] == w[n] )
                     count++;
             }
             inter++;
-
-            if (inter == strlen(words[i]))
+            if ( inter == strlen(words[i]) )
                 break;
-            if (count > 0)
+            if ( count > 0 )
                 k++;
         }
 
-        if (w[k] == '\0')
+        if ( w[k] == '\0' )
         {
-            if (tam == 0)
+            if ( tam == 0 )
             {
-                tam = strlen(words[i]);
+                tam = strlen( words[i] );
                 m = i;
             }
-            else if (tam > strlen(words[i]))
+            else if ( tam > strlen(words[i]) )
             {
-                tam = strlen(words[i]);
+                tam = strlen( words[i] );
                 m = i;
             }
         }
