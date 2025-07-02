@@ -16,6 +16,7 @@ void reorderList(struct ListNode* head) {
         count++;
     }
     
+
     count++;
     tam = count / 2;
 
