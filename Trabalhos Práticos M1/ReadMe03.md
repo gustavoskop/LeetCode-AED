@@ -10,7 +10,7 @@ A tarefa é **determinar quantas outras reordenações** de `nums` resultam **na
 
 ## Conceito
 
-- O problema exige **contar o número de permutações** de `nums` que, ao serem inseridas em uma BST vazia, **produzam a mesma estrutura** de árvore.
+- O problema exige **contar o número de permutações *adicionais*** de `nums` que, ao serem inseridas em uma BST vazia, **produzam a mesma estrutura** de árvore.
 - O resultado deve ser retornado **módulo `10⁹ + 7`** devido ao tamanho potencialmente grande.
 
 ---
