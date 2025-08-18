@@ -2,7 +2,7 @@
 
 # 1569. Number of Ways to Reorder Array to Get Same BST
 
-Dado um array `nums` que representa uma **permutação de inteiros de 1 até n**, vamos construir uma **árvore binária de busca (BST)** inserindo os elementos de `nums` **na ordem** em que aparecem.
+Dado um array `nums` que representa uma **permutação de inteiros de 1 até n**, vamos construir uma **árvore de busca binária  (BST)** inserindo os elementos de `nums` **na ordem** em que aparecem.
 
 A tarefa é **determinar quantas outras reordenações** de `nums` resultam **na mesma BST** gerada originalmente.
 
